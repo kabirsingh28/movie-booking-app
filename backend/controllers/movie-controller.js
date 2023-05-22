@@ -54,7 +54,7 @@ const addMovie = async (req, res, next) => {
     if(!movie) {
         return res.status(500).json({message: "Request Failed"})
     }
-    return res.status(201).json({movie})
+    return res.status(201).json({movie}) 
 }
 
 const getAllMovie = async (req, res, next) => {

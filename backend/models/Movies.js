@@ -22,7 +22,7 @@ const MovieSchema = new mongoose.Schema({
         required: true
     },
     featured: {
-        type: Boolean
+        type: Boolean,
     },
     bookings: [{
         type: mongoose.Types.ObjectId,

@@ -7,4 +7,4 @@ movieRouter.get("/", getAllMovie);
 movieRouter.post("/add", addMovie);
 movieRouter.get("/:id", getMovieById)
  
-module.exports = movieRouter
+module.exports = movieRouter 

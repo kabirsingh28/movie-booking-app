@@ -48,7 +48,7 @@ const adminLogin = async (req, res, next) => {
         existingAdmin = await Admin.findOne({email})
     } catch (err){
         return console.log(err)
-    }
+    }   
     if(!existingAdmin){
         return res.status(401).json({message: "Admin not found"})
     }
@@ -65,7 +65,7 @@ const getAdmins=async(req,res)=>{
     try{
         admins=await Admin.find();
     }
-    catch(e)
+    catch(e) 
     {
         return res.send(e.message);
     }

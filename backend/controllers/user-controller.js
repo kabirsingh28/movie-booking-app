@@ -65,12 +65,12 @@ const updateUser = async (req, res, next) => {
 const deleteUser = async (req, res, next) => {
     const id = req.params.id;
     let users;
-    try {
+    try { 
         users = await user.findByIdAndDelete(id)
     } catch (err){
         return res.send(err.message);
     }
-    if(!users){
+    if(!users){ 
         return res.status(500).json({message: "Something went wrong"})
     } 
     res.status(200).json({message: "Deleted successfully", user: users})

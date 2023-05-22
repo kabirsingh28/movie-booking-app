@@ -11,4 +11,4 @@ userRouter.post("/login", logIn)
 userRouter.get("/bookings/:id", getBookingofUser);
 userRouter.get("/:id", getUserById);
 
-module.exports = userRouter 
+module.exports = userRouter

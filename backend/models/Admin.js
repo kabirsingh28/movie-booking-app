@@ -15,7 +15,7 @@ const AdminSchema = new mongoose.Schema({
         type:mongoose.Types.ObjectId,
         ref:'Movies'
     }]
-});
+});  
 
 const admin =  mongoose.model('admin', AdminSchema)
 module.exports = admin;
